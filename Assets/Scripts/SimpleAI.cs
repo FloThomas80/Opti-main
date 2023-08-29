@@ -54,7 +54,7 @@ public class SimpleAI : MonoBehaviour {
         }
     }
 
-    void WanderBehavior()
+    void WanderBehavior() // mort des ennemis
     {
         GetComponentInChildren<Animator>().SetTrigger("walk");
         GetComponent<NavMeshAgent>().speed = walkSpeed;
